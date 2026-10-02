@@ -7,7 +7,7 @@ function removeData() {
 function addData(key, value) {
 	if (localStorage.getItem(key) === null) { // Sets
 		localStorage.setItem(key, value)
-	else { // Adds
+	} else { // Adds
 		key += value
 	}
 	console.log(localStorage.getItem(key))
