@@ -2,6 +2,7 @@ function removeData() {
 	localStorage.clear()
 }
 
+// Hopefully works now ?
 // Adds OR sets data
 function addData(key, value) {
 	if (localStorage.getItem(key) === null) { // Sets
