@@ -2,8 +2,12 @@ function removeData() {
 	localStorage.clear()
 }
 
-// Doesn't work, should add if statement to check if key exists before adding value
-function addData(key, value) { 
-	key += value
+// Adds OR sets data
+function addData(key, value) {
+	if (localStorage.getItem(key) === null) { // Sets
+		localStorage.setItem(key, value)
+	else { // Adds
+		key += value
+	}
 	console.log(localStorage.getItem(key))
 }
