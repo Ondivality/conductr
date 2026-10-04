@@ -1,6 +1,6 @@
 const form = document.getElementById("submitRoute");
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', async (event) => {
 	event.preventDefault();
 	newRoute(form.elements.name.value, form.elements.miles.value, form.elements.profit.value, form.elements.start.value, form.elements.destination.value)
 });
