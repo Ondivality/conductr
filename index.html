@@ -7,23 +7,14 @@
 	<body>
 		<h1>WIP Project</h1>
 		<p><a href="https://rail.hackclub.com">Building for HackRails!</a></p>
+		<p>Time</p>
 		<p id="timeDisplay">0</p>
-		<button onclick="removeData('time')">Reset Time</button>
-		<button onclick="addData('time', 5)">Add Time</button>
-		<button onclick="subtractData('time', 5)">Subtract Time</button>
-		<h2>New Route</h2>
-		<form id="submitRoute">
-			<label for="name">Route Name:</label><br>
-			<input type="text" id="name" value=""><br>
-			<label for="miles">Miles:</label><br>
-			<input type="text" id="miles" value=""><br>
-			<label for="profit">Profit:</label><br>
-			<input type="text" id="profit" value=""><br>
-			<label for="start">Start:</label><br>
-			<input type="text" id="start" value=""><br>
-			<label for="destination">Destination:</label><br>
-			<input type="text" id="destination" value=""><br>
-			<input type="submit" value="Submit">
-		</form>
+		<p>Cash</p>
+		<p id="cashDisplay">0</p>
+		<p>Miles</p>
+		<p id="milesDisplay">0</p>
+		<button onclick="newRoute('Route9', 25, 5, 15, 'Tokyo', 'Beijing')">New Route</button>
+		<button onclick="playRoute('Route9')">Play Route</button>
+		<button onclick="removeAllData()">Remove Data</button>
 	</body>
 </html>
